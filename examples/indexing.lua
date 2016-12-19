@@ -30,7 +30,7 @@ local index = col:create_index({name = 'text', txt = 'text'}, {
 	sparse = true, 
 	background = true, 
 	expireAfterSeconds = 100, 
-	textIndexVersion = 1,
+	version = 1,
 	weights = {name = 10, txt = 3} 
 } )
 print('\nCreating text search index: ' .. index)
