@@ -666,7 +666,7 @@ lua_mongo_collection_create_index(lua_State *L)
         lua_getfield(L, options_index, "sparse");
         lua_getfield(L, options_index, "background");
         lua_getfield(L, options_index, "expireAfterSeconds");
-        lua_getfield(L, options_index, "textIndexVersion");
+        lua_getfield(L, options_index, "version");
         lua_getfield(L, options_index, "weights");
 
         used_default_index_name = !lua_isstring(L, -9);
