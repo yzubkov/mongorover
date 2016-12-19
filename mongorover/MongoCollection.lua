@@ -293,7 +293,7 @@ local MongoCollection = {__mode="k"}
 	-- Example usage at @{indexing.lua}.
 	-- @return A @{MongoCursor} with results.
 	function MongoCollection:list_indexes()
-		local cursor_t = self.collection_t:collection_find_indexes(luaBSONObjects)
+		local cursor_t = self.collection_t:collection_list_indexes(luaBSONObjects)
 		return MongoCursor(self, cursor_t)
 	end
 
