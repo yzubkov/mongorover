@@ -764,7 +764,7 @@ DONE:
 
 
 int
-lua_mongo_collection_find_indexes(lua_State *L)
+lua_mongo_collection_list_indexes(lua_State *L)
 {
     collection_t *collection;
     mongoc_cursor_t *cursor = NULL;
